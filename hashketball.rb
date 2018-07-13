@@ -165,6 +165,7 @@ def team_names
     game_hash.collect {|team, stats| 
     if stats == :team_name
       game_hash[team][stats]
+    end
     }
 
 end
