@@ -164,7 +164,7 @@ end
 def team_names 
 #    return [game_hash[:home][:team_name],game_hash[:away][:team_name] ]
     game_hash.collect {|team, stats| 
-     puts game_hash[team][:team_name]
+      game_hash[team][:team_name]
     }
 
 end
