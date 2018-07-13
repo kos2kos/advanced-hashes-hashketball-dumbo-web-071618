@@ -161,13 +161,11 @@ def team_colors (team)
 end
 
 def team_names 
-    return [game_hash[:home][:team_name],game_hash[:away][:team_name] ]
-    temp = []
+#    return [game_hash[:home][:team_name],game_hash[:away][:team_name] ]
     game_hash.collect {|team, stats| 
     if stats == :team_name
-      temp = temp << stats
+      game_hash[team][stats]
     }
-    temp
 
 end
 
